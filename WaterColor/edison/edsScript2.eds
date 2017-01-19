@@ -1,0 +1,7 @@
+SpatialBandwidth = 7;
+RangeBandwidth = 6.5;
+MinimumRegionArea = 20;
+Speedup = MEDIUM;
+Load('meanshiftTemp/input.ppm', IMAGE);
+Segment;
+Save('meanshiftTemp/meanshift.ppm', PPM, SEGM_IMAGE);

@@ -7,13 +7,11 @@ using namespace cv;
 void SaliencyDistance::saliency(Mat &src,Mat &mySaliency){
     string inputDir = "saliencyTemp/in/";
     string outputDir = "saliencyTemp/out/";
-    char cmd[300];
     system("mkdir -p saliencyTemp/in/");
     system("mkdir -p saliencyTemp/out/");
-//    system("rm -Rf saliencyTemp/in/*");
-//    system("rm -Rf saliencyTemp/out/*");
+    
     imwrite(string(inputDir) + "saliency.jpg", src);
-
+    //system("./Saliency.sh saliencyTemp/in/saliency.jpg");
 	mySaliency = imread(outputDir+"saliency_RCC.png",CV_LOAD_IMAGE_GRAYSCALE);
 }
 
@@ -31,7 +29,7 @@ void SaliencyDistance::jumpFlooding(Mat &saliency, Mat &jump, Geometry::Point** 
 				Q[++p2] = myPoint(i, j);
 				ancestor[i][j]=Geometry::Point(i, j);
 				visit[i][j] = 1;
-				//cout << "jumping :" << i << " " << j << endl;
+//				cout << "jumping :" << i << " " << j << endl;
 			}
 		}
 	}
@@ -165,10 +163,10 @@ void SaliencyDistance::deal(Mat &src, Mat &dstSaliency,Mat &dstDis)
 	//Geometry::Point ancestor[800][800];
 	jumpFlooding(mySaliency,jump,ancestor);
 	//show jump
-	//ImageToDouble(jump,jump);
-	//DoubleNomolization(jump);
-	//imshow("jump", jump);
-	//waitKey();
+	ImageToDouble(jump,jump);
+	DoubleNomolization(jump);
+//	imshow("jump", jump);
+//	waitKey();
 
 
 	//normalize
@@ -177,7 +175,7 @@ void SaliencyDistance::deal(Mat &src, Mat &dstSaliency,Mat &dstDis)
 	//normalize(dis,ancestor);
 	DoubleNomolization(dis);	
 	GaussianBlur(dis, dis,Size(5,5),0,0);
-	//imshow("dis", dis);
+	imshow("dis", dis);
 
 	dstSaliency = mySaliency;
 	dstDis = dis;

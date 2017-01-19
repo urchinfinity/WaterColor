@@ -1,24 +1,20 @@
 ﻿#include "ColorAdjustment.h"
 #include "ToolBox.h"
 #include "Debug.h"
+
 using namespace cv;
 
-ColorAdjustment::ColorAdjustment(){
+
+void ColorAdjustment::deal(const Mat &input, Mat &output) {
+	
 //	MEAN = Scalar(42, 18, 27);
 //	STDDEV = Scalar(25, 21, 28);
-	MEAN = Scalar(57,14,21);
-	STDDEV = Scalar(21, 19, 25);
-}
-
-void ColorAdjustment::deal(const Mat &input, Mat &output)
-{
-	//colorTransform(input, output);
-	//getTargetStdAndMean();
-	//output = input.clone();
-	
+    
+	MEAN = Scalar(67.2261, 4.04555, 6.66296);
+	STDDEV = Scalar(20.3214, 11.8977, 16.2515);
+    
 	colorTransform(input, MEAN, STDDEV, output);
 }
-
 
 
 //分为4步
@@ -26,7 +22,7 @@ void ColorAdjustment::deal(const Mat &input, Mat &output)
 //2.将src和target从RGB空间转为Lab空间
 //3.作变换dstLab = (srcLab - mean(src)) * (std(target) / std(src)) + mean(taarget)
 //4.dstLab转回RGB空间并变回uchar格式
-void ColorAdjustment::colorTransform(const Mat &src,Mat &target,Mat &dst){
+void ColorAdjustment::colorTransform(const Mat &src,Mat &target,Mat &dst) {
 	
 	Mat srcd, targetd;
 	ImageToDouble(src, srcd);
@@ -49,7 +45,7 @@ void ColorAdjustment::colorTransform(const Mat &src,Mat &target,Mat &dst){
 	DoubleToImage(dstd, dst);
 }
 
-void ColorAdjustment::colorTransform(const Mat &src, Scalar targetMean,Scalar targetStd, Mat &dst){
+void ColorAdjustment::colorTransform(const Mat &src, Scalar targetMean, Scalar targetStd, Mat &dst){
 	
 	Mat srcd;
 	ImageToDouble(src, srcd);
@@ -70,13 +66,11 @@ void ColorAdjustment::colorTransform(const Mat &src, Scalar targetMean,Scalar ta
 }
 
 
-void ColorAdjustment::getTargetStdAndMean()
-{
+void ColorAdjustment::getTargetStdAndMean() {
 	MEAN = Scalar::all(0);
 	STDDEV = Scalar::all(0);
 	int count = 0;
-	for (int i = 24; i <= 38; i++)
-	{
+	for (int i = 24; i <= 38; i++) {
 		Debug() <<"loading: "<< i;
 		char fileDir[300]; 
 		sprintf(fileDir, ".//source//%d.jpg", i);
@@ -104,8 +98,7 @@ void ColorAdjustment::getTargetStdAndMean()
 };
 
 
-void ColorAdjustment::getTargetStdAndMean(Mat &img, Scalar &imgStd, Scalar &imgMean)
-{
+void ColorAdjustment::getTargetStdAndMean(Mat &img, Scalar &imgStd, Scalar &imgMean) {
 	Mat imgd;
 	ImageToDouble(img, imgd);
 
@@ -116,14 +109,14 @@ void ColorAdjustment::getTargetStdAndMean(Mat &img, Scalar &imgStd, Scalar &imgM
 
 }
 
-void ColorAdjustment::loadExampleStyle(){
+void ColorAdjustment::loadExampleStyle() {
 	MEAN = Scalar(55.49, 10.12, 20.45);
 	STDDEV = Scalar(20.45, 12.26, 14.85);
 
 }
 
 #include <fstream>
-void ColorAdjustment::chooseOneStyle(char* style){
+void ColorAdjustment::chooseOneStyle(char* style) {
 	Debug() << "choose style: " << style;
 	char dir[300];
 	sprintf(dir, "styleLib/%s/list.txt", style);

@@ -147,7 +147,6 @@
 		6F37F6461E0BD44D007FBE03 /* WaterColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F6381E0BD44D007FBE03 /* WaterColor.cpp */; };
 		6F37F6471E0BD44D007FBE03 /* WetInWet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F63A1E0BD44D007FBE03 /* WetInWet.cpp */; };
 		6F37F64F1E0C1372007FBE03 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F6491E0C1372007FBE03 /* Debug.cpp */; };
-		6F37F6641E0C1851007FBE03 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6F37F65A1E0C1851007FBE03 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -310,7 +309,6 @@
 		6F37F62C1E0BD44D007FBE03 /* Granulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Granulation.h; sourceTree = "<group>"; };
 		6F37F62D1E0BD44D007FBE03 /* HandTremorEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HandTremorEffect.cpp; sourceTree = "<group>"; };
 		6F37F62E1E0BD44D007FBE03 /* HandTremorEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandTremorEffect.h; sourceTree = "<group>"; };
-		6F37F62F1E0BD44D007FBE03 /* lena.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = lena.bmp; sourceTree = "<group>"; };
 		6F37F6301E0BD44D007FBE03 /* PigmentVariation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PigmentVariation.cpp; sourceTree = "<group>"; };
 		6F37F6311E0BD44D007FBE03 /* PigmentVariation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PigmentVariation.h; sourceTree = "<group>"; };
 		6F37F6321E0BD44D007FBE03 /* SaliencyDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaliencyDistance.cpp; sourceTree = "<group>"; };
@@ -329,7 +327,6 @@
 		6F37F64B1E0C1372007FBE03 /* debug.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = debug.txt; sourceTree = "<group>"; };
 		6F37F64C1E0C1372007FBE03 /* dst */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dst; sourceTree = "<group>"; };
 		6F37F64D1E0C1372007FBE03 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
-		6F37F64E1E0C1372007FBE03 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		6F37F6501E0C1851007FBE03 /* ClassDiagram.cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ClassDiagram.cd; sourceTree = "<group>"; };
 		6F37F6521E0C1851007FBE03 /* Debug */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Debug; sourceTree = "<group>"; };
 		6F37F6531E0C1851007FBE03 /* dst */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dst; sourceTree = "<group>"; };
@@ -338,13 +335,10 @@
 		6F37F6561E0C1851007FBE03 /* handtremor-debug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "handtremor-debug.jpg"; sourceTree = "<group>"; };
 		6F37F6571E0C1851007FBE03 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
 		6F37F6591E0C1851007FBE03 /* process */ = {isa = PBXFileReference; lastKnownFileType = folder; path = process; sourceTree = "<group>"; };
-		6F37F65A1E0C1851007FBE03 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6F37F65B1E0C1851007FBE03 /* Release */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Release; sourceTree = "<group>"; };
 		6F37F65C1E0C1851007FBE03 /* Saliency.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = Saliency.exe; sourceTree = "<group>"; };
-		6F37F65D1E0C1851007FBE03 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		6F37F65E1E0C1851007FBE03 /* src.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = src.jpg; sourceTree = "<group>"; };
 		6F37F65F1E0C1851007FBE03 /* styleLib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styleLib; sourceTree = "<group>"; };
-		6F37F6601E0C1851007FBE03 /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
 		6F37F6611E0C1851007FBE03 /* waterColor.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = waterColor.vcxproj; sourceTree = "<group>"; };
 		6F37F6621E0C1851007FBE03 /* waterColor.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = waterColor.vcxproj.filters; sourceTree = "<group>"; };
 		6F37F6631E0C1851007FBE03 /* waterColor.vcxproj.user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = waterColor.vcxproj.user; sourceTree = "<group>"; };
@@ -352,12 +346,11 @@
 		6F37F6661E0EBA51007FBE03 /* dst */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dst; sourceTree = "<group>"; };
 		6F37F6671E0EBA51007FBE03 /* exampleExe */ = {isa = PBXFileReference; lastKnownFileType = folder; path = exampleExe; sourceTree = "<group>"; };
 		6F37F6681E0EBA51007FBE03 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
-		6F37F6691E0EBA51007FBE03 /* matlab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = matlab; sourceTree = "<group>"; };
 		6F37F66A1E0EBA51007FBE03 /* process */ = {isa = PBXFileReference; lastKnownFileType = folder; path = process; sourceTree = "<group>"; };
 		6F37F66B1E0EBA51007FBE03 /* Release */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Release; sourceTree = "<group>"; };
 		6F37F66C1E0EBA51007FBE03 /* saliencyTemp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = saliencyTemp; sourceTree = "<group>"; };
-		6F37F66D1E0EBA51007FBE03 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		6F37F66E1E0EBA51007FBE03 /* styleLib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = styleLib; sourceTree = "<group>"; };
+		6FF978001E14E734007624D4 /* gbvs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gbvs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,15 +643,14 @@
 		6F37F5181E0BCC29007FBE03 /* WaterColor */ = {
 			isa = PBXGroup;
 			children = (
+				6FF978001E14E734007624D4 /* gbvs */,
 				6F37F6651E0EBA51007FBE03 /* Debug */,
 				6F37F6661E0EBA51007FBE03 /* dst */,
 				6F37F6671E0EBA51007FBE03 /* exampleExe */,
 				6F37F6681E0EBA51007FBE03 /* include */,
-				6F37F6691E0EBA51007FBE03 /* matlab */,
 				6F37F66A1E0EBA51007FBE03 /* process */,
 				6F37F66B1E0EBA51007FBE03 /* Release */,
 				6F37F66C1E0EBA51007FBE03 /* saliencyTemp */,
-				6F37F66D1E0EBA51007FBE03 /* src */,
 				6F37F66E1E0EBA51007FBE03 /* styleLib */,
 				6F37F6501E0C1851007FBE03 /* ClassDiagram.cd */,
 				6F37F6521E0C1851007FBE03 /* Debug */,
@@ -668,13 +660,10 @@
 				6F37F6561E0C1851007FBE03 /* handtremor-debug.jpg */,
 				6F37F6571E0C1851007FBE03 /* include */,
 				6F37F6591E0C1851007FBE03 /* process */,
-				6F37F65A1E0C1851007FBE03 /* README.md */,
 				6F37F65B1E0C1851007FBE03 /* Release */,
 				6F37F65C1E0C1851007FBE03 /* Saliency.exe */,
-				6F37F65D1E0C1851007FBE03 /* src */,
 				6F37F65E1E0C1851007FBE03 /* src.jpg */,
 				6F37F65F1E0C1851007FBE03 /* styleLib */,
-				6F37F6601E0C1851007FBE03 /* texture.jpg */,
 				6F37F6611E0C1851007FBE03 /* waterColor.vcxproj */,
 				6F37F6621E0C1851007FBE03 /* waterColor.vcxproj.filters */,
 				6F37F6631E0C1851007FBE03 /* waterColor.vcxproj.user */,
@@ -684,7 +673,6 @@
 				6F37F64B1E0C1372007FBE03 /* debug.txt */,
 				6F37F64C1E0C1372007FBE03 /* dst */,
 				6F37F64D1E0C1372007FBE03 /* include */,
-				6F37F64E1E0C1372007FBE03 /* src */,
 				6F37F6241E0BD44D007FBE03 /* Abstraction.cpp */,
 				6F37F6251E0BD44D007FBE03 /* Abstraction.h */,
 				6F37F6261E0BD44D007FBE03 /* ColorAdjustment.cpp */,
@@ -696,7 +684,6 @@
 				6F37F62C1E0BD44D007FBE03 /* Granulation.h */,
 				6F37F62D1E0BD44D007FBE03 /* HandTremorEffect.cpp */,
 				6F37F62E1E0BD44D007FBE03 /* HandTremorEffect.h */,
-				6F37F62F1E0BD44D007FBE03 /* lena.bmp */,
 				6F37F6301E0BD44D007FBE03 /* PigmentVariation.cpp */,
 				6F37F6311E0BD44D007FBE03 /* PigmentVariation.h */,
 				6F37F6321E0BD44D007FBE03 /* SaliencyDistance.cpp */,
@@ -783,7 +770,6 @@
 				6F37F64F1E0C1372007FBE03 /* Debug.cpp in Sources */,
 				6F37F63E1E0BD44D007FBE03 /* EdgeDarkening.cpp in Sources */,
 				6F37F6461E0BD44D007FBE03 /* WaterColor.cpp in Sources */,
-				6F37F6641E0C1851007FBE03 /* README.md in Sources */,
 				6F37F6421E0BD44D007FBE03 /* PigmentVariation.cpp in Sources */,
 				6F37F51A1E0BCC29007FBE03 /* main.cpp in Sources */,
 			);
@@ -886,7 +872,10 @@
 					"$(inherited)",
 					/usr/local/Cellar/qt/4.8.7_2/lib,
 				);
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Applications/MATLAB_R2016a.app/extern/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib,
 					/usr/local/Cellar/freetype/2.7/lib,
@@ -910,7 +899,10 @@
 					"$(inherited)",
 					/usr/local/Cellar/qt/4.8.7_2/lib,
 				);
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Applications/MATLAB_R2016a.app/extern/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/lib,
 					/usr/local/Cellar/freetype/2.7/lib,

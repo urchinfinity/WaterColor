@@ -3,10 +3,12 @@
 
 #include <opencv2/opencv.hpp>
 
-class EdgeDarkening
-{
-public:	
-	void deal(const cv::Mat &input, cv::Mat &output);
+using namespace std;
+using namespace cv;
+
+class EdgeDarkening {
+public:
+	void deal(const cv::Mat &input, cv::Mat &output, string SPName);
 };
 
 

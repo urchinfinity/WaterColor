@@ -137,8 +137,8 @@ bool checkInCol(Mat &src, int i, int j){
 	Vec3b d = getRightMean(src, i, j);
 	return isSimilar(c, d) && isDifferent(a, b);
 }
-void HandTremorEffect::deal(Mat &src, Mat &dst, Mat &myCanny)
-{
+
+void HandTremorEffect::deal(Mat &src, Mat &dst, Mat &myCanny) {
 	Mat msk = Mat::zeros(src.size(), CV_8U);
 	dst = src.clone();
 	Mat debug = dst.clone();

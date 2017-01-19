@@ -7,13 +7,12 @@
 using namespace cv;
 
 
-int main(int argc,char *argv[]){
-    
+int main(int argc,char *argv[]){  
     //file dir
-    string inName = "src-small.jpg";
-    string inDir = "src/" + inName;
-    string outName = "output.png";
-    string outDir = "dst/" + outName;
+    string inName = "ADE_train_00000001.jpg";
+    string SPName = "ADE_train_00000001.png";
+    string inDir = "input/" + inName;
+    string outDir = "output/" + inName;
     
     if (argc == 3) {
         inDir = string(argv[1]);
@@ -26,13 +25,14 @@ int main(int argc,char *argv[]){
     
     //process
     WaterColor watercolor;
-    imwrite("process/src.jpg", input);
-    watercolor.deal(input, output);
+    imwrite("process/input.jpg", input);
+    watercolor.deal(input, output, inName, SPName);
     
     //show & store result
-    imshow("src", input);
-    imshow("dst", output);
+    imshow("output", output);
     imwrite(outDir, output);
-    imwrite("process/dst.png", output);
+    imwrite("process/output.png", output);
     waitKey();
+    
+    return 0;
 }

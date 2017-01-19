@@ -1,0 +1,31 @@
+/* 
+Performs mean shift based segmentation. 
+*/
+
+//Specify mean shift parameters 
+SpatialBandwidth = 7; 
+RangeBandwidth = 6.5; 
+MinimumRegionArea = 20; 
+Speedup = MEDIUM;
+
+//Display progress 
+DisplayProgress ON;
+
+//Load an image to be segmented 
+Load('meanshiftTemp/input.ppm', IMAGE);
+
+//Segment the image 
+Segment;
+
+//Save the result:
+
+//The segmented image... 
+Save('segmimage.pnm', PNM, SEGM_IMAGE);
+
+//The filtered image... 
+Save('filtimage.ppm', PPM, FILT_IMAGE);
+
+//The boundary image... 
+Save('bndyimage.pgm', PGM, SEGM_BOUNDARIES);
+
+//done. 

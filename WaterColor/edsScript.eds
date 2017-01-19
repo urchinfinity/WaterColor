@@ -1,0 +1,7 @@
+SpatialBandwidth = 7;
+RangeBandwidth = 6.5;
+MinimumRegionArea = 20;
+Speedup = MEDIUM;
+Load('temp/ADE_train_00000021.ppm', IMAGE);
+Segment;
+Save('segmimage.pnm', PNM, SEGM_IMAGE);
